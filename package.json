@@ -1,0 +1,24 @@
+{
+  "name": "coronafiles",
+  "version": "1.0.0",
+  "description": "This website will updates the corona cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhayMadaan9/CoronaWeb.git"
+  },
+  "author": "AbhayMadaan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhayMadaan9/CoronaWeb/issues"
+  },
+  "homepage": "https://github.com/AbhayMadaan9/CoronaWeb#readme",
+  "dependencies": {
+    "mongoose": "^6.5.2",
+    "node": "^16.17.0",
+    "nodemon": "^2.0.19"
+  }
+}
