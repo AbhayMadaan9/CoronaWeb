@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoronaUpdates</title>
     <script src="indexScript.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        // The ymaps.ready() function will be called when
+        // all the API components are loaded and the DOM tree is generated.
+        ymaps.ready(init);
+        function init(){ 
+            // Creating the map.    
+             myMap = new ymaps.Map("map", {
+                // The map center coordinates.
+                // Default order: “latitude, longitude”.
+                // To not manually determine the map center coordinates,
+                // use the Coordinate detection tool.
+                center: [55.76, 37.64],
+                // Zoom level. Acceptable values:
+                // from 0 (the entire world) to 19.
+                zoom: 7
+            })
+        }
+    </script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div id="map"></div>
 </body>
+
 </html>

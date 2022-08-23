@@ -1,4 +1,4 @@
-const { response } = require("express");
+// const { response } = require("express");
 
 function UpdateMap()
 {
@@ -9,7 +9,12 @@ function UpdateMap()
     By fetch function which have a function which automatically runs having two arguments response and reject as javascript callbacks methods and uses .then to have the response 
     for more breif: https://javascript.info/fetch , https://javascript.info/promise-basics
     */
-
-    fetch('/data.json').then(response => response.json()).then(data => {console.log(data)})
-    
+    fetch('./data.json')
+    .then(response => response.json())
+    .then(data => {console.log(data.data)}) 
+    // data.data.array.forEach(function(){
+    //     latitude = data.data.latitude,
+    //     longitude = data.data.longitude
+    // });
 }
+UpdateMap();
